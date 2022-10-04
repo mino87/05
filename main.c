@@ -4,20 +4,18 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	printf("put a string : \n");
-	char c;
-	scanf("%char",&c);
-	int count=0;
+	printf("input a number : ");
+	int sum=0;
+	int x;
+	scanf("%d",&x);// 이게 받은 숫자 
+	int i;
+	for(i=0;i<=x;i++)
+	    sum=sum+i;
 	
-	while ((c= getchar())!='\n')
-	{
-	if (c>='0'&&c<='9')
-	   (count=count+1);
-	else
-	   (count=count);
-	}
+	printf("The result is %d", sum); 
 	
-	printf("the number of digits is %d",count);
+	   
+	
 	
 	
 	    	
